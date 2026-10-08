@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unc Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="lang-bar">
+      <div class="lang-pill" id="source-label">Slang</div>
+      <button class="swap-btn" id="swap-btn" type="button" aria-label="Swap translation direction" title="Swap">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M7 7h11m0 0-3-3m3 3-3 3M17 17H6m0 0 3-3m-3 3 3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="lang-pill" id="target-label">Meaning</div>
+    </header>
+
+    <section class="panels">
+      <div class="panel panel-input">
+        <textarea id="input" placeholder="Type a slang word…" spellcheck="false" aria-label="Text to translate"></textarea>
+        <button class="icon-btn" id="mic-btn" type="button" aria-label="Speak your input" title="Speak">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+
+      <div class="panel panel-output">
+        <div id="output" aria-live="polite"></div>
+        <button class="icon-btn" id="speak-btn" type="button" aria-label="Read the result aloud" title="Listen">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="slang-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
