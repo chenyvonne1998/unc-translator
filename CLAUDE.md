@@ -56,4 +56,4 @@ Good `keywords` matter most for reverse lookup, so include plain-English synonym
 
 - Build DOM with `textContent` / `createElement`, never `innerHTML` with user input.
 - Keep code small and readable; the project is meant to stay simple.
-- Repo: GitHub `yvonnechen1998/unc-translator`, default branch `main`.
+- Repo: GitHub `chenyvonne1998/unc-translator`, default branch `main`.
